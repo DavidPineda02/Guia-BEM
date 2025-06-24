@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+    <body>
+        <!-- Bloque principal: Contenido principal de la página -->
+        <main class="main">
+            <!-- Elemento: Título principal del contenido -->
+            <h1 class="main__title">Formulario</h1>
+            <!-- Bloque: Formulario general -->
+            <form class="form">
+                <!-- Elemento: Campo individual del formulario -->
+                <div class="form__field">
+                    <!-- Elemento: Etiqueta del campo -->
+                    <label for="name" class="form__label">Nombre</label>
+                    <!-- Elemento: Campo de entrada de texto -->
+                    <input class="form__input" type="text" id="name" placeholder="Su nombre" required>
+                </div>
+                <!-- Elemento: Campo individual del formulario -->
+                <div class="form__field">
+                    <label for="email" class="form__label">Correo Electrónico</label>
+                    <input class="form__input" type="email" id="email" placeholder="Su correo electrónico" required>
+                </div>
+                <!-- Elemento: Campo individual del formulario -->
+                <div class="form__field">
+                    <label for="message" class="form__label">Mensaje</label>
+                    <!-- Elemento: Área de texto para mensajes largos -->
+                    <textarea class="form__textarea" id="message" placeholder="Su mensaje" required></textarea>
+                </div>
+                <!-- Elemento: Botón de envío del formulario -->
+                <input type="submit" value="Enviar" class="form__button">
+            </form>
+        </main>
+    </body>
+</html>

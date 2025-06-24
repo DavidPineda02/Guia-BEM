@@ -1,0 +1,99 @@
+/* REINICIO GLOBAL: Elimina márgenes y rellenos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye bordes y relleno dentro del ancho/alto total */
+}
+
+/* Estilo base del cuerpo de la página */
+body {
+    font-family: sans-serif; /* Tipografía limpia y legible */
+}
+
+/* BLOQUE: header - Encabezado de la página (no usado en este ejemplo, pero presente) */
+.header {
+    background-color: rgba(44, 39, 39, 0.65); /* Fondo oscuro semi-transparente */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* BLOQUE: main - Contenedor principal del contenido */
+.main {
+    padding: 20px; /* Espaciado interno */
+}
+
+/* ELEMENTO: Título principal dentro del bloque main */
+.main__title {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 40px; /* Espacio superior */
+    margin-bottom: 40px; /* Espacio inferior */
+    font-size: 2em; /* Tamaño grande */
+    color: #2c2727; /* Color oscuro */
+}
+
+/* BLOQUE: form - Formulario general */
+.form {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrado horizontalmente */
+    background-color: #fff; /* Fondo blanco */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* ELEMENTO: Campo individual del formulario */
+.form__field {
+    margin-bottom: 20px; /* Espacio entre campos */
+}
+
+/* ELEMENTO: Etiqueta del campo dentro del formulario */
+.form__label {
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    margin-bottom: 8px; /* Espacio debajo de la etiqueta */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color gris oscuro */
+    margin-left: 1px; /* Pequeño ajuste visual */
+}
+
+/* ELEMENTO: Campo de entrada de texto y área de texto */
+.form__input,
+.form__textarea {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 12px; /* Relleno interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: border-color 0.3s ease; /* Efecto suave al cambiar borde */
+}
+
+/* ESTADO: Campo activo (en foco) */
+.form__input:focus,
+.form__textarea:focus {
+    outline: none; /* Quita el borde predeterminado del navegador */
+    border: 1.5px solid #2c2727; /* Borde más grueso y oscuro */
+}
+
+/* ELEMENTO: Área de texto para mensajes largos */
+.form__textarea {
+    resize: vertical; /* Permite redimensionar solo verticalmente */
+    min-height: 120px; /* Altura mínima */
+}
+
+/* ELEMENTO: Botón de envío del formulario */
+.form__button {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 12px; /* Relleno interno */
+    border: none; /* Sin borde predeterminado */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #2c2727; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Negrita */
+    font-size: 1em; /* Tamaño estándar */
+    cursor: pointer; /* Cambia el cursor a mano */
+    transition: background-color 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+/* HOVER: Cambio visual al pasar el ratón sobre el botón */
+.form__button:hover {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #2c2727; /* Borde oscuro */
+    color: #2c2727; /* Texto oscuro */
+}
