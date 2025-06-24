@@ -1,55 +1,60 @@
-*{
+/* REINICIO GLOBAL: Elimina márgenes y rellenos predeterminados */
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Incluye bordes y relleno dentro del ancho/alto total */
 }
 
-body{
-    font-family: sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
+/* Estilo base del cuerpo de la página */
+body {
+    font-family: sans-serif; /* Tipografía limpia y legible */
+    margin: 0; /* Sin margen */
+    background-color: #f4f4f4; /* Fondo claro para diferenciar contenido del header */
 }
 
-main{
-    padding: 20px;
-    text-align: center;
-    margin-top: 80px;
+/* Contenido principal con estilo visual */
+main {
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    margin-top: 80px; /* Espacio debajo del header fijo */
 }
 
-.site-header{
-    background-color: #333;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    border-bottom: 1px solid #444;
+/* BLOQUE: site-header - Header fijo superior */
+.site-header {
+    background-color: #333; /* Fondo oscuro */
+    padding: 10px 20px; /* Espaciado interno */
+    position: fixed; /* Mantiene el header siempre visible */
+    top: 0; /* Colocado en la parte superior */
+    left: 0; /* Alineado al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 100; /* Asegura que aparezca sobre otros elementos */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil */
+    border-bottom: 1px solid #444; /* Línea inferior oscura */
 }
 
-.nav-menu__list{
-    text-align: center;
+/* ELEMENTO: Lista de menú */
+.nav-menu__list {
+    text-align: center; /* Centra horizontalmente los elementos del menú */
 }
 
-.nav-menu__item{
-    display: inline-block;
+/* ELEMENTO: Cada elemento del menú */
+.nav-menu__item {
+    display: inline-block; /* Permite que los elementos se alineen horizontalmente */
 }
 
-.nav-menu__link{
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background-color 0.2s;
-    border-radius: 5px;
-    margin-right: 70px;
+/* ELEMENTO: Enlace dentro del menú */
+.nav-menu__link {
+    display: block; /* Hace que el enlace ocupe todo el espacio del item */
+    color: white; /* Color del texto blanco */
+    text-decoration: none; /* Quita subrayado */
+    padding: 10px 15px; /* Relleno interno */
+    transition: background-color 0.2s; /* Efecto suave al cambiar color */
+    border-radius: 5px; /* Esquinas redondeadas */
+    margin-right: 70px; /* Espacio entre enlaces */
 }
 
-.nav-menu__link:hover{
-    background-color: #555;
-    border-radius: 5px;
+/* HOVER: Cambio visual cuando el cursor pasa sobre un enlace */
+.nav-menu__link:hover {
+    background-color: #555; /* Fondo gris más claro */
+    border-radius: 5px; /* Mantiene las esquinas redondeadas */
 }
-
-
-
