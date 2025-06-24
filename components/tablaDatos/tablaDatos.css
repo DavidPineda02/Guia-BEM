@@ -1,0 +1,70 @@
+/* Estilo base del cuerpo */
+body {
+    background: #f8fafd; /* Fondo claro y limpio */
+    font-family: "Poppins", sans-serif; /* Tipografía moderna */
+    color: #222; /* Color principal del texto */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+    font-size: 16px;
+    text-align: center;
+}
+
+/* BLOQUE: table-data__header - Encabezado superior de la tabla */
+.table-data__header {
+    background: #0784d2; /* Azul vibrante */
+    color: #fff; /* Texto blanco */
+    padding: 18px 0 18px 32px; /* Relleno interno */
+    border-radius: 0 0 12px 12px; /* Esquinas redondeadas inferiores */
+    margin-bottom: 24px; /* Espacio debajo */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* ELEMENTO: Título dentro del encabezado */
+.table-data__title {
+    display: inline-block; /* Permite usar padding/margin */
+    font-weight: bold; /* Negrita */
+    margin: 0; /* Sin margen */
+}
+
+/* BLOQUE: table-data__main - Contenedor principal de la tabla */
+.table-data__main {
+    padding: 24px; /* Relleno alrededor de la tabla */
+    display: block; /* Muestra como bloque normal */
+}
+
+/* BLOQUE: table-data__table - Tabla base */
+.table-data__table {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 900px; /* Ancho máximo para evitar expansión excesiva */
+    margin: 0 auto; /* Centrado horizontal */
+    border-collapse: collapse; /* Elimina espacio entre bordes */
+    background: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 12px rgba(30,41,59,0.08); /* Sombra sutil */
+    overflow: hidden; /* Oculta cualquier cosa que sobresalga */
+}
+
+/* ELEMENTO: Cabecera de la tabla (thead) */
+.table-data__thead th {
+    background: #0784d2; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    padding: 14px 8px; /* Relleno interno */
+    border-bottom: 2px solid #04619b; /* Borde inferior más oscuro */
+}
+
+/* ELEMENTO: Celdas del cuerpo de la tabla */
+.table-data__row td {
+    padding: 12px 8px; /* Relleno interno */
+    border-bottom: 1px solid #e2e8f0; /* Línea divisoria clara */
+    text-align: center; /* Centra el texto */
+}
+
+/* ESTILO ADICIONAL: Última fila sin borde inferior */
+.table-data__row:last-child .table-data__cell {
+    border-bottom: none; /* Quita el borde inferior del último elemento */
+}
+
+/* MODIFICADOR: Celda de encabezado (th) */
+.table-data__cell--th {
+    font-weight: bold; /* Texto en negrita */
+}
