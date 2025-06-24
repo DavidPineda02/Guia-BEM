@@ -1,0 +1,118 @@
+/* REINICIO GLOBAL: Elimina márgenes y rellenos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye bordes y relleno en el cálculo del tamaño total */
+}
+
+/* Estilo base del cuerpo de la página */
+body {
+    background-image: url(imgs/wallpapersden.com_kame-house-dragon-ball-z_3032x1706.jpg); /* Fondo de la página */
+    background-position: center; /* Centra la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-attachment: fixed; /* La imagen no se mueve al hacer scroll */
+    height: auto; /* Altura adaptable */
+    font-family: "Poppins", sans-serif; /* Tipografía principal */
+}
+
+/* BLOQUE: gallery - Contenedor principal de la galería */
+.gallery {
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente sobre el fondo general */
+    width: 99vw; /* Ancho casi completo de la ventana */
+    min-height: 100vh; /* Altura mínima igual a la altura de la pantalla */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+/* ELEMENTO: Título de la galería */
+.gallery__title {
+    text-align: center; /* Centrado horizontal del texto */
+    font-size: 3rem; /* Tamaño grande del título */
+    font-weight: 900; /* Negrita muy fuerte */
+    font-style: italic; /* Fuente cursiva */
+    color: rgba(255, 255, 255, 0.8); /* Color blanco semitransparente */
+    text-transform: uppercase; /* Todo mayúsculas */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+    padding: 1em 0; /* Relleno vertical */
+}
+
+/* ELEMENTO: Contenedor de todas las tarjetas */
+.gallery__cards {
+    max-width: 1200px; /* Ancho máximo para contener las tarjetas */
+    margin: 0 auto; /* Centrado horizontal del contenedor */
+    text-align: center; /* Centra los elementos inline-block dentro */
+}
+
+/* ELEMENTO: Tarjeta individual dentro de la galería */
+.gallery__card {
+    border: 3px solid #a8a8a8; /* Borde gris claro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    width: 230px; /* Ancho fijo de cada tarjeta */
+    text-align: center; /* Centrado del contenido */
+    background-color: #f9f9f9; /* Fondo claro */
+    display: inline-block; /* Permite mostrar varias tarjetas en una fila */
+    vertical-align: top; /* Evita saltos raros al alinear inline-block */
+    padding: 1em; /* Relleno interno */
+    margin: 0.9em; /* Espaciado entre tarjetas */
+    transition: transform 0.2s ease; /* Transición suave para efecto hover */
+    
+}
+
+/* HOVER: Efecto suave al pasar el ratón sobre una tarjeta */
+.gallery__card:hover {
+    transform: translateY(-5px); /* Eleva ligeramente la tarjeta */
+}
+
+/* ELEMENTO: Imagen dentro de la tarjeta */
+.gallery__image {
+    object-fit: contain; /* Ajusta la imagen sin recortar */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    height: 350px; /* Altura fija */
+}
+
+/* ELEMENTO: Nombre del personaje dentro de la tarjeta */
+.gallery__name {
+    font-weight: 600; /* Fuente seminegrita */
+    font-style: normal; /* Sin cursiva */
+    font-size: 1.1rem; /* Tamaño adecuado para el nombre */
+}
+
+/* MODIFICADORES: Variaciones visuales para tarjetas individuales */
+
+.gallery__card--tien-shinhan {
+    background-color: rgb(255, 144, 124); /* Naranja suave */
+    border-color: rgb(255, 38, 0); /* Borde rojizo */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 0.3em; /* Letras separadas visualmente */
+    text-shadow: 0.2rem 0.2rem 5px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+.gallery__card--dokkan {
+    background-color: rgb(255, 219, 152); /* Amarillo claro */
+    border-color: rgb(228, 148, 0); /* Borde amarillo oscuro */
+}
+
+.gallery__card--androide-17 {
+    background-color: rgb(95, 190, 136); /* Verde pastel */
+    border-color: rgb(0, 121, 52); /* Borde verde oscuro */
+}
+
+.gallery__card--androide-19 {
+    background-color: rgb(158, 211, 255); /* Azul claro */
+    border-color: rgb(0, 140, 255); /* Borde azul intenso */
+}
+
+.gallery__card--androide-13 {
+    background-color: rgb(212, 165, 255); /* Morado claro */
+    border-color: rgb(90, 0, 173); /* Borde morado oscuro */
+}
+
+.gallery__card--androide-16 {
+    background: linear-gradient(135deg, rgb(255, 131, 109), rgb(255, 212, 131)); /* Degradado naranja-amarillo */
+    border-color: rgb(196, 52, 27); /* Borde marrón-rojizo */
+}
+
+.gallery__card--androide-18 {
+    background: radial-gradient(circle, rgb(207, 110, 255), rgb(147, 206, 255)); /* Degradado radial violeta-cian */
+    border-color: rgb(0, 0, 0); /* Borde negro */
+}
