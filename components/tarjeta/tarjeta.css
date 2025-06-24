@@ -1,65 +1,74 @@
-
+/* BLOQUE: product-card - Contenedor principal de la tarjeta */
 .product-card {
-    width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-    margin: 0 auto;
+  width: 250px; /* Ancho fijo de la tarjeta */
+  border: 1px solid #ddd; /* Borde suave */
+  border-radius: 8px; /* Esquinas redondeadas */
+  overflow: hidden; /* Oculta cualquier contenido que exceda los límites */
+  background-color: #fff; /* Fondo blanco */
+  font-family: Arial, sans-serif; /* Tipografía limpia */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+  text-align: center; /* Centra el contenido horizontalmente */
+  margin: 0 auto; /* Centra la tarjeta dentro de su contenedor */
 }
 
+/* ELEMENTO: Área de imagen dentro de la tarjeta */
 .product-card__image {
-    padding: 10px;
+  padding: 10px; /* Espaciado interno */
 }
 
+/* ESTILO DE LA IMAGEN DENTRO DEL CONTENEDOR */
 .product-card__image img {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-    border-radius: 5px;
+  max-width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
+  height: auto; /* Mantiene proporciones */
+  display: inline-block; /* Permite centrarla fácilmente */
+  border-radius: 5px; /* Le da un poco de curvatura a las esquinas */
 }
 
+/* ELEMENTO: Contenido principal de texto */
 .product-card__body {
-    padding: 10px;
+  padding: 10px; /* Espacio interno */
 }
 
+/* ELEMENTO: Título del producto */
 .product-card__title {
-    margin: 0 0 8px;
-    font-size: 18px;
-    color: #333;
+  margin: 0 0 8px; /* Sin margen superior, espacio inferior */
+  font-size: 18px; /* Tamaño de fuente */
+  color: #333; /* Color oscuro para legibilidad */
 }
 
+/* ELEMENTO: Descripción del producto */
 .product-card__description {
-    margin: 0 0 10px;
-    font-size: 14px;
-    color: #666;
+  margin: 0 0 10px; /* Sin margen superior, espacio inferior */
+  font-size: 14px; /* Fuente más pequeña */
+  color: #666; /* Gris claro para no sobresaltar */
 }
 
+/* ELEMENTO: Precio del producto */
 .product-card__price {
-    display: block;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 10px;
+  display: block; /* Para ocupar toda la línea */
+  font-weight: bold; /* Destaca visualmente */
+  color: #222; /* Color oscuro */
+  margin-bottom: 10px; /* Espacio debajo del precio */
 }
 
+/* ELEMENTO: Pie de página de la tarjeta */
 .product-card__footer {
-    padding: 0 10px 10px;
+  padding: 0 10px 10px; /* Espacio solo abajo y lateral */
 }
 
+/* ELEMENTO: Botón dentro del footer */
 .product-card__btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #007bff; /* Azul Bootstrap estándar */
+  color: white; /* Texto blanco */
+  border: none; /* Quita borde por defecto del botón */
+  padding: 8px 12px; /* Relleno interno */
+  font-size: 14px; /* Tamaño de fuente */
+  border-radius: 4px; /* Esquinas ligeramente redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar sobre él */
+  transition: background-color 0.3s ease; /* Efecto suave al hacer hover */
 }
 
+/* HOVER: Cambio de color al pasar el ratón */
 .product-card__btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3; /* Un azul más oscuro */
 }
