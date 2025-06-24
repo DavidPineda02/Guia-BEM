@@ -1,76 +1,88 @@
+/* REINICIO GLOBAL: Elimina márgenes y rellenos predeterminados */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Incluye bordes y relleno en el ancho/alto total */
 }
 
+/* Estilo base del cuerpo de la página */
 body {
-    font-family: sans-serif;
-    color: #333;
-    line-height: 1.6;
-    font-size: 14px;
+    font-family: sans-serif; /* Tipografía limpia y legible */
+    color: #333; /* Color de texto principal */
+    line-height: 1.6; /* Espaciado entre líneas más cómodo */
+    font-size: 14px; /* Tamaño base del texto */
 }
 
+/* BLOQUE: task-list - Contenedor principal de la lista de tareas */
 .task-list {
-    background-color: #fff;
-    margin: 30px auto;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 40%;
+    background-color: #fff; /* Fondo blanco */
+    margin: 30px auto; /* Centrado horizontalmente con margen superior/inferior */
+    padding: 20px 30px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 40%; /* Ancho fijo del contenedor */
 }
 
+/* ELEMENTO: Título dentro del bloque task-list */
 .task-list__title {
-    text-align: center;
-    color: #2c2727;
-    margin-bottom: 20px;
-    font-size: 2em;
+    text-align: center; /* Centra el título */
+    color: #2c2727; /* Color oscuro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 2em; /* Tamaño grande */
 }
 
+/* ELEMENTO: Lista no ordenada de tareas */
 .task-list__list {
-    list-style: none;
+    list-style: none; /* Quita viñetas */
 }
 
+/* ELEMENTO: Cada ítem individual de la lista */
 .task-list__item {
-    padding: 15px 0;
-    border-bottom: 1px solid #eee;
-    font-size: 1.1em;
+    padding: 15px 0; /* Espaciado vertical */
+    border-bottom: 1px solid #eee; /* Línea divisoria suave */
+    font-size: 1.1em; /* Tamaño ligeramente mayor */
 }
 
+/* MODIFICADOR: Último elemento sin borde inferior */
 .task-list__item:last-child {
-    border-bottom: none;
+    border-bottom: none; /* Quita el borde inferior del último elemento */
 }
 
+/* ESTADO: Ítem marcado como completado (checkbox activo) */
 .task-list__item:has(input[type="checkbox"]:checked) {
-    color: #434944;
-    text-decoration: line-through;
-    opacity: 0.8;
+    color: #434944; /* Cambio de color de texto */
+    text-decoration: line-through; /* Texto tachado */
+    opacity: 0.8; /* Un poco más tenue */
 }
 
+/* ELEMENTO: Checkbox dentro del ítem de tarea */
 .task-list__item input[type="checkbox"] {
-    margin-right: 15px;
-    width: 15px;
-    height: 15px;
-    vertical-align: middle;
+    margin-right: 15px; /* Espacio entre checkbox y texto */
+    width: 15px; /* Ancho del checkbox */
+    height: 15px; /* Alto del checkbox */
+    vertical-align: middle; /* Alinea el checkbox con el texto */
 }
 
+/* ELEMENTO: Botón dentro del ítem de tarea */
 .task-list__button {
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    float: right;
-    background-color: #ccc;
-    color: #333;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Relleno interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+    float: right; /* Posiciona a la derecha del ítem */
+    background-color: #ccc; /* Fondo gris claro */
+    color: #333; /* Color de texto */
+    font-weight: bold; /* Negrita */
+    transition: background-color 0.3s ease; /* Efecto suave al hacer hover */
 }
 
+/* MODIFICADOR: Botón de eliminar (usado en conjunto con .task-list__button) */
 .button--delete {
-    background-color: rgb(228, 91, 91);
-    color: white;
+    background-color: rgb(228, 91, 91); /* Rojo suave */
+    color: white; /* Texto blanco */
 }
 
+/* HOVER: Cambio visual al pasar el ratón sobre botón eliminar */
 .button--delete:hover {
-    background-color: #e00707d7;
+    background-color: #e00707d7; /* Rojo más intenso */
 }
