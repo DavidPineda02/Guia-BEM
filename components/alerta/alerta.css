@@ -1,0 +1,94 @@
+/* REINICIO GLOBAL: Elimina márgenes y rellenos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye bordes y relleno en el cálculo del tamaño total */
+}
+
+/* Estilo base del cuerpo de la página */
+body {
+    background-color: #f0f0f0; /* Fondo claro */
+    color: #000000; /* Color del texto principal */
+    font-family: 'Poppins', sans-serif; /* Tipografía limpia y moderna */
+}
+
+/* BLOQUE: main - Contenedor principal de contenido */
+.main {
+    padding: 2rem; /* Espaciado interno */
+    text-align: center; /* Centra horizontalmente el contenido */
+}
+
+/* ELEMENTO: Botón dentro del bloque main */
+.main__button {
+    background-color: #0784d2; /* Azul vibrante */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 1rem 2rem; /* Relleno vertical y horizontal */
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    font-weight: bold; /* Negrita */
+    text-decoration: none; /* Quita subrayado */
+    border-radius: 50px; /* Forma redondeada */
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+    display: inline-block; /* Permite centrarlo con texto */
+}
+
+/* BLOQUE: notification - Ventana modal o notificación */
+.notification {
+    position: fixed; /* Se mantiene fija en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa toda la altura */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: none; /* Oculto por defecto */
+    opacity: 0; /* Transparente al inicio */
+    transition: opacity .3s ease-in-out, visibility .3s ease-in-out; /* Transición suave */
+}
+
+/* ESTADO: Mostrar notificación cuando se accede desde el enlace #notification */
+.notification:target {
+    display: block; /* Muestra la notificación */
+    opacity: 1; /* Hace que sea visible */
+}
+
+/* ELEMENTO: Contenido principal de la notificación */
+.notification__content {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Color del texto */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 15px; /* Esquinas redondeadas */
+    width: 90%; /* Ancho responsivo */
+    max-width: 500px; /* Ancho máximo */
+    position: relative; /* Contexto posicional */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste fino para centrado perfecto */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* ELEMENTO: Título de la notificación */
+.notification__title {
+    margin-top: 0; /* Sin margen superior */
+    color: #000000; /* Color del texto */
+    margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+/* ELEMENTO: Texto descriptivo de la notificación */
+.notification__text {
+    line-height: 1; /* Altura de línea compacta */
+    margin-bottom: 50px; /* Espacio debajo del texto */
+    line-height: 22px; /* Altura de línea más cómoda */
+}
+
+/* ELEMENTO: Enlace para cerrar la notificación */
+.notification__close {
+    background-color: #0784d2; /* Azul igual al botón principal */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 0.8rem 1.5rem; /* Relleno interno */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cursor de mano */
+    font-weight: bold; /* Fuente negrita */
+    border-radius: 20px; /* Bordes ligeramente redondeados */
+}
